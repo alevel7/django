@@ -1,0 +1,32 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.list-group-item{
+    width:25%;
+}
+
+.sidebar-nav li{
+    background: black;
+    color: white;
+    margin-bottom: 2px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sidebar-nav li:hover{
+    background: rgb(116, 190, 214);
+}
+
+#user{
+    background: rgb(6, 6, 124);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.jumbotron{
+    background: rgb(27, 22, 22);
+}

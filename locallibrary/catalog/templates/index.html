@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Local Library Home</h1>
+  <p>Welcome to LocalLibrary, a website developed by <em>KAZEEM TAIWO</em></p>
+  <h2>Dynamic content</h2>
+  <p>The library has the following record counts:</p>
+  <ul class="list-group">
+    <li class='list-group-item'><span class="badge"> {{ num_books }}</span><strong>Books:</strong></li>
+    <li class='list-group-item'><span class="badge"> {{ num_instances }}</span><strong>Copies:</strong></li>
+    <li class='list-group-item'><span class="badge"> {{ num_instances_available }}</span><strong>Copies available:</strong></li>
+    <li class='list-group-item'><span class="badge"> {{ num_authors }}</span><strong>Authors:</strong></li>
+    <li class='list-group-item'><span class="badge"> {{ num_genres }}</span><strong>Genres:</strong> </li>
+  </ul>
+  <p>
+    You have visited this page {{num_visits}}
+    {% if num_visits == 1 %}
+      time
+    {% else %}
+      times
+    {% endif %}
+    </p>
+{% endblock %}
